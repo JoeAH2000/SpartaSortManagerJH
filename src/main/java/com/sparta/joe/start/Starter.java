@@ -31,7 +31,7 @@ public class Starter {
         }
         unsortedArray = RandomArray.randomIntArray(arraySize, 1, 50);
 
-        Sorter sorter = SortFactory.getSorter(sortSelected, unsortedArray);
+        Sorter sorter = SortFactory.getSorter(sortSelected);
 
         System.out.println("Unsorted Array:");
         ArrayPrinter.arrayPrint(unsortedArray);
@@ -46,17 +46,5 @@ public class Starter {
         System.out.println("Total time taken: " + (endTime-startTime) + " nanoseconds.");
 
 
-    }
-
-    private static void startupText() {
-        System.out.println("Welcome to the Sort Manager program!");
-        System.out.println("Available Sorters:");
-        System.out.println("1: Bubble Sort");
-        System.out.println("2: Insertion Sort");
-        System.out.println("3: Merge Sort");
-        System.out.println("4: Quick Sort");
-        System.out.println("5: Selection Sort");
-        System.out.println("6: Binary Tree Sort");
-        System.out.println("Please enter the number of your selection");
     }
 }

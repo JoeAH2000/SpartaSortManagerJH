@@ -9,7 +9,7 @@ import com.sparta.joe.sorters.quicksort.QuickSort;
 import com.sparta.joe.sorters.selectionsort.SelectionSort;
 
 public class SortFactory {
-    public static Sorter getSorter(int sortSelected, int[] unsortedArray) {
+    public static Sorter getSorter(int sortSelected) {
 
         if (sortSelected == 1) {
             return new BubbleSort();

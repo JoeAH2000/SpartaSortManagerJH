@@ -54,13 +54,23 @@ public class BinaryTreeClass implements BinaryTree {
     @Override
     public int getLeftChild(int element) throws ChildNotFoundException {
         Node node = findNode(element);
-        return node.getLeftChild().getValue();
+        int leftChild = node.getLeftChild().getValue();
+
+        if(leftChild == 0) {
+            throw new ChildNotFoundException("right", element);
+        }
+        return leftChild;
     }
 
     @Override
     public int getRightChild(int element) throws ChildNotFoundException {
         Node node = findNode(element);
-        return node.getRightChild().getValue();
+        int rightChild = node.getRightChild().getValue();
+
+        if(rightChild == 0) {
+            throw new ChildNotFoundException("right", element);
+        }
+        return rightChild;
     }
 
     @Override
