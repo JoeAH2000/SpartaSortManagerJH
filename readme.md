@@ -1,6 +1,9 @@
 #Java Sort Manager
+
 ##Created By Joe Hilton
+
 ###Requirements:
+
 1- Client is presented with a number of sort algorithms to choose from
 
 2- Decision is given via the command line (Scanner)
@@ -18,6 +21,7 @@
     The time taken
 
 ###Sort Algorithms Implemented:
+
 1- BubbleSort
 
 2- InsertionSort
@@ -31,6 +35,7 @@
 6- BinaryTreeSort
 
 ###Tools Used:
+
     IntelliJ IDEA
     Maven
     JUnit
